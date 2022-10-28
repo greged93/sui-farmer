@@ -1,0 +1,14 @@
+[package]
+name = "sui-bot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sui-sdk = { git = "https://github.com/MystenLabs/sui", branch = "devnet" }
+sui-types = { git = "https://github.com/MystenLabs/sui", branch = "devnet" }
+tokio = { version = "1", features = ["full"] }
+fastcrypto = { git = "https://github.com/MystenLabs/fastcrypto", rev = "ab44e914084bd2fa65e7caf64ab32d61910a5d30" }
+anyhow = "1.0"
+dirs = "4.0"
